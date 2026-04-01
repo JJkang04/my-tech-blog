@@ -2,7 +2,7 @@
 title: "나의 첫 블로그 포스팅"
 date: "2026-03-27"
 description: "마크다운으로 작성하는 첫 번째 글입니다."
-category: "Next.js"
+category: "개발"
 ---
 
 ## 1. 내가 배운 것
