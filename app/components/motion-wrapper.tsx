@@ -21,9 +21,10 @@ export const staggerItem = {
 export function FadeIn({children} : {children: React.ReactNode}) {
     return (
         <motion.div
-            initial= {{opacity: 0, y:15}}
+            initial= {{opacity: 0, y:10}}
             animate= {{opacity: 1, y:0}}
-            transition= {{duration:0.5, ease: "easeOut"}}
+            transition = {{duration: 0.4, ease: "easeOut"}}
+            style={{ willChange: "opacity, transform" }} 
         >
             {children}
         </motion.div>

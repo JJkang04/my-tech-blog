@@ -24,14 +24,18 @@ export default function RootLayout({children}:{children: React.ReactNode})
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <div className="max-w-3xl mx-auto min-h-screen flex flex-col px-4">
           <header className="sticky top-0 z-50 py-6 border-b border-gray-200 dark:border-zinc-800 
-          bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md flex justify-between items-center px-2">
+          bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md flex justify-between items-center px-4 transition-all 
+          duration-300">
             <ThemeToggle />
-            <Link href="/" className= "text-xl font-black tracking-tighter">
+            
+            <Link href="/" className= "text-xl font-black tracking-tighter text-zinc-900 dark:text-white transition-all duration-300">
               MY BLOG
             </Link>
+
             <nav className="space-x-4 text-sm font-medium">
-              <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link>
-              <Link href="/about" className="hover:text-blue-500 transition-colors">About</Link>
+
+              <Link href="/" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300">Home</Link>
+              <Link href="/about" className="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 transition-all duration-300">About</Link>
             </nav>
           </header>
 
