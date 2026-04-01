@@ -11,6 +11,14 @@ const inter = Inter({ subsets: ["latin"]});
 export const metadata: Metadata= {
   title: "기술 블로그",
   description: "컴공 학부생의 개발 기록",
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "MY BLOG",
+  },
 };
 
 
@@ -19,6 +27,11 @@ export default function RootLayout({children}:{children: React.ReactNode})
 {
   return (
     <html lang="ko" suppressHydrationWarning>
+      <head>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
       <body className={`${inter.className} bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 
       transition-colors duration-300`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
