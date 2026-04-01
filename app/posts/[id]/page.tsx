@@ -16,7 +16,7 @@ export default async function Post({ params }: PostProps) {
         <h1 className="text-4xl font-black mb-3 dark:text-white">
           {postData.title}
         </h1>
-        <p className="text-gray-500">{postData.date}</p>
+        <p className="text-gray-300">{postData.date}</p>
       </header>
 
       {/* (B) 본문 섹션 - 변환된 HTML 사용 */}

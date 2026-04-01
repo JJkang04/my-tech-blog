@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <FadeIn>
       <div className="py-10">
-        <h1 className="text-3xl font-bold mb-4 text-zinc-900 dark:text-white">예비 개발자의 기술 블로그입니다</h1>
+        <h1 className="text-4xl font-bold mb-4 text-zinc-900 dark:text-white">예비 개발자의 기술 블로그입니다</h1>
 
         <div className="flex flex-wrap gap-2 mb-10">
           {categories.map((cat:string) => (

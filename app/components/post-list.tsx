@@ -17,7 +17,7 @@ export function PostList({ posts }: { posts: any[] }) {
         <motion.li 
           key={id} 
           variants={staggerItem}
-          className="border border-gray-200 dark:border-zinc-800 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white dark:bg-zinc-900/50"
+          className="border border-gray-400 dark:border-zinc-600 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white dark:bg-zinc-900/50"
         >
           <Link href={`/posts/${id}`} className="block">
             <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">
